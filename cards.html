@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+ <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #383737;
+ }
+  .container{
+    width: 100%;
+    height: 100%;
+    
+    border: 10px solid #000;
+  }
+  .h1{
+    width: 100%;
+    height: 10%;
+   display:flex;
+   justify-content:flex-start;
+    
+  }
+  .h1 h1{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .block{
+    width: 100%;
+    height: 40%;
+    border:2px solid #000
+  }
+ .cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+  }
+.card-list{
+  height:100%;
+  width: 13%;
+  border: 1px solid red;
+  list-style: none;
+  margin-left: 26px;
+}
+.card-item{
+  height: 100%;
+  width: 100%;
+}
+.card-button{
+  width: 100%;
+  height: 100%;
+  
+}
+.block1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+.block1 span{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.card-title{
+  position:relative;
+}
+.card-title-text{
+position: absolute;
+left: -107px;
+bottom: 98px;
+font-size: 96px;
+/* clip: rect(0 0 0 0); */
+/* clip-path: inset(30%); */
+/* overflow: hidden; */
+width: 1px;
+white-space: nowrap;
+height: 1px;
+}
+.card-no{
+font-weight: 700;
+display: inline-block;
+position: relative;
+-webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+line-height: 1;
+height: 1em;
+
+}
+/* .card-no::before{
+  content: "1";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: transparent;
+  -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+  line-height: 1;
+  height: 1em;
+} */
+  </style>
+<body>
+  <div class="container">
+    <div class="h1">
+      <h1>Trending Now</h1>
+    </div>
+   <div class="block">  <!-- flex -->
+      <div class="cards">
+        <ul class="card-list">
+          <li class="card-item">
+            <button class="card-button">
+              <div class="block1">
+                <span style="background-image: url(assets/images/chava.png);"></span>
+              </div>
+              <span>
+                <span class="card-title">
+              <span class="card-title-text"> 
+                <span class="card-no">
+                1</span>
+              </span>
+             </span>
+              </span>
+             
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+
+ 
+</body>
+</html>
+
